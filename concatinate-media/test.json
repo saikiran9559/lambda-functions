@@ -1,0 +1,45 @@
+{
+  "concatenateParams": {
+    "Sinks": [
+      {
+        "S3BucketSinkConfiguration": {
+          "Destination": "arn:aws:s3:::saikiran-chime-media-concatinated-bucket"
+        },
+        "Type": "S3Bucket"
+      }
+    ],
+    "Sources": [
+      {
+        "MediaCapturePipelineSourceConfiguration": {
+          "ChimeSdkMeetingConfiguration": {
+            "ArtifactsConfiguration": {
+              "Audio": {
+                "State": "Enabled"
+              },
+              "Content": {
+                "State": "Disabled"
+              },
+              "CompositedVideo": {
+                "State": "Disabled"
+              },
+              "DataChannel": {
+                "State": "Disabled"
+              },
+              "TranscriptionMessages": {
+                "State": "Disabled"
+              },
+              "MeetingEvents": {
+                "State": "Enabled"
+              },
+              "Video": {
+                "State": "Enabled"
+              }
+            }
+          },
+          "MediaPipelineArn": "arn:aws:chime:us-east-1:098055497445:media-pipeline/e437d6a0-3481-4c2d-87ed-1e134646f222"
+        },
+        "Type": "MediaCapturePipeline"
+      }
+    ]
+  }
+}

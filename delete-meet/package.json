@@ -1,0 +1,15 @@
+{
+  "name": "delete-meet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-chime-sdk-meetings": "^3.287.0",
+    "pg": "^8.10.0"
+  }
+}

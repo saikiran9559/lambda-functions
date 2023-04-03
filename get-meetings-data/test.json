@@ -1,0 +1,14 @@
+{
+  "requestContext": {
+    "authorizer": {
+      "claims": 
+      {
+        "cognito:username": "saikiran123"
+      }
+    }
+  },
+  "body":{
+    "from_date":"2023-03-18",
+    "to_date":"2023-03-25"
+  }
+}

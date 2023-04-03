@@ -1,0 +1,12 @@
+{
+  "queryStringParameters": {
+    "meetingId": "fadsfaifasdf"
+  },
+  "requestContext":{
+"authorizer":{
+    "claims":{
+        "cognito:username":"saikiran123"
+    }
+}
+  }
+}
